@@ -1,6 +1,6 @@
 import * as CSS from 'csstype'
 
-export type education = {
+export type educationType = {
   title: string
   subTitle: string
   innerText?: string
@@ -10,12 +10,12 @@ export type education = {
   textColor: CSS.Color
   icon: JSX.Element
 }
-export type profileData = {
+export type profileType = {
   githubId: string
   name_en: string
   name_ko: string
   name_ch: string
   img: string
   about: string
-  education: education[]
+  education: educationType[]
 }
