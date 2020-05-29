@@ -13,7 +13,3 @@ export const site: main.site = {
   SITE_NAME: 'JaeSeoKim Portfolio',
   SITE_TITLE: 'JaeSeoKim Portfolio'
 }
-
-export const profile: main.profile = {
-  
-}
