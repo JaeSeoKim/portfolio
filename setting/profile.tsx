@@ -4,9 +4,13 @@ import {
   MdSecurity,
   MdSchool,
   MdLightbulbOutline,
-  MdAttachMoney
+  MdAttachMoney,
+  MdInfo,
+  MdComputer
 } from 'react-icons/md'
 import { RiHomeGearLine } from 'react-icons/ri'
+import { FaNetworkWired, FaLinux } from 'react-icons/fa'
+import { TiDocumentText } from 'react-icons/ti'
 
 /**
  * 📑 educationData 학력 정보 작성
@@ -46,8 +50,8 @@ export const educationData: timeLineType[] = [
     subTitle: '- 컴퓨터보안학과(위탁학급)',
     innerText: '수료',
     date: '2019.03. ~ 2020.01',
-    bgColor1: '#7f7fd5',
-    bgColor2: '#86a8e7',
+    bgColor1: '#ff6e7f',
+    bgColor2: '#bfe9ff',
     textColor: '#FFF',
     icon: <MdSchool />
   },
@@ -56,8 +60,8 @@ export const educationData: timeLineType[] = [
     subTitle: '- 정보보호 관리진단',
     innerText: 'KISA 정보보안 인재 양성 프로그램(수료)',
     date: '2019.08. ~ 2019.12',
-    bgColor1: '#ff79c6',
-    bgColor2: '#bd93f9',
+    bgColor1: '#314755',
+    bgColor2: '#26a0da',
     textColor: '#FFF',
     icon: <MdSecurity />
   },
@@ -66,8 +70,8 @@ export const educationData: timeLineType[] = [
     subTitle: '- 스마트 홈가전 정보보호 교육',
     innerText: '수료',
     date: '2019.12.02 ~ 2019.12.04',
-    bgColor1: '#7f7fd5',
-    bgColor2: '#86a8e7',
+    bgColor1: '#2b5876',
+    bgColor2: '#4e4376',
     textColor: '#FFF',
     icon: <RiHomeGearLine />
   }
@@ -119,6 +123,54 @@ const awardsData: timeLineType[] = [
   }
 ]
 
+const certificationData: timeLineType[] = [
+  {
+    title: '네트워크관리사 2급',
+    subTitle: '- 한국정보통신자격협회',
+    date: '2019.09.17',
+    bgColor1: '#e65c00',
+    bgColor2: '#F9D423',
+    textColor: '#FFF',
+    icon: <FaNetworkWired />
+  },
+  {
+    title: '정보처리기능사',
+    subTitle: '- 한국산업인력공단',
+    date: '2019.09.05',
+    bgColor1: '#2193b0',
+    bgColor2: '#6dd5ed',
+    textColor: '#FFF',
+    icon: <MdInfo />
+  },
+  {
+    title: '해킹보안전문가 3급',
+    subTitle: '- 한국해킹보안협회장',
+    date: '2019.08.05',
+    bgColor1: '#cc2b5e',
+    bgColor2: '#753a88',
+    textColor: '#FFF',
+    icon: <MdComputer />
+  },
+  {
+    title: '리눅스마스터 2급',
+    subTitle: '- 한국정보통신진흥협회',
+    date: '2019.07.05',
+    bgColor1: '#ec008c',
+    bgColor2: '#fc6767',
+    textColor: '#FFF',
+    icon: <FaLinux />
+  },
+  {
+    title: 'ITQ 한글엑셀 A등급',
+    subTitle: '- 한국생산성본부',
+    date: '2019.10.31',
+    bgColor1: '#1488CC',
+    bgColor2: '#2B32B2',
+    textColor: '#FFF',
+    icon: <TiDocumentText />
+  }
+]
+
 /**
  * 📑 profileData 개인 정보 작성
  * githubId: 'setting/constants.ts' 에서 작성한 내용을 사용하는 것을 추천 드립니다.
@@ -144,5 +196,6 @@ export const profileData: profileType = {
   - [**TeamMODU**](http://modusecurity.xyz/) 소속
     `,
   education: educationData,
-  awards: awardsData
+  awards: awardsData,
+  certification: certificationData
 }

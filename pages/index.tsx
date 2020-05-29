@@ -20,6 +20,12 @@ const IndexPage = () => {
       />
       <Divder color id='Awards' />
       <TimeLine title={'Awards'} className='mx-4' data={profileData.awards} />
+      <Divder color id='Certification' />
+      <TimeLine
+        title={'Certification'}
+        className='mx-4'
+        data={profileData.certification}
+      />
     </div>
   )
 }

@@ -3,7 +3,7 @@ import * as CSS from 'csstype'
 export type timeLineType = {
   title: string
   subTitle: string
-  innerText?: string
+  innerText?: string | JSX.Element
   date: string
   bgColor1: CSS.Color
   bgColor2: CSS.Color
@@ -19,4 +19,5 @@ export type profileType = {
   about: string
   education: timeLineType[]
   awards: timeLineType[]
+  certification: timeLineType[]
 }

@@ -10,7 +10,7 @@
   - [x] profile
   - [x] Education
   - [x] Awards
-  - [ ] Certification
+  - [x] Certification
   - [ ] Skills
 - [ ] Projects
 - [ ] Lecture
