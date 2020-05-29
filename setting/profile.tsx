@@ -31,7 +31,7 @@ export const educationData: timeLineType[] = [
     title: '서일대학교',
     subTitle: '- 소프트웨어공학과',
     innerText: '재학중',
-    date: '2020.03. ~ Prevent',
+    date: '2020.03. ~ Present',
     bgColor1: '#7f7fd5',
     bgColor2: '#86a8e7',
     textColor: '#FFF',
