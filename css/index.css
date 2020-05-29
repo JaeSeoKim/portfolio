@@ -1,0 +1,15 @@
+/* purgecss start ignore */
+@import "tailwindcss/base";
+@import "react-vertical-timeline-component/style.min.css";
+/* purgecss end ignore */
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* purgecss start ignore */
+.vertical-timeline-element-content {
+  box-shadow: 0 0 0 4px #fff !important;
+}
+.vertical-timeline-element-content-arrow {
+  border-right: 8px solid #fff !important;
+}
+/* purgecss end ignore */
