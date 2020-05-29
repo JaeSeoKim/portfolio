@@ -6,7 +6,6 @@ import {
 } from 'react-vertical-timeline-component'
 import PhotoFrame from './PhotoFrame'
 import marked from 'marked'
-import Link from 'next/link'
 import { ProjectType } from '../../interfaces'
 
 type Props = {
@@ -56,13 +55,13 @@ const ProjectList: React.FunctionComponent<Props> = ({
           >
             <h1 className='text-lg font-semibold'>{value.title}</h1>
             <div className='flex flex-col justify-center'>
-              <Link href='/[project]' as={`/${value.title}`}>
-                <a className='my-auto mx-auto mt-4'>
-                  <PhotoFrame alt='Project Img' img={value.img} className='' />
-                </a>
-              </Link>
+              {/* <Link href='/[project]' as={`/${value.title}`}> */}
+              <a className='my-auto mx-auto mt-4'>
+                <PhotoFrame alt='Project Img' img={value.img} className='' />
+              </a>
+              {/* </Link> */}
               <div
-                className='text-sm break-all overflow-y-auto max-w-xs'
+                className='text-sm overflow-y-auto'
                 dangerouslySetInnerHTML={{
                   __html: marked(value.markdown)
                 }}

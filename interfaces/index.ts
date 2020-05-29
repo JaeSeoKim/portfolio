@@ -32,4 +32,5 @@ export type profileType = {
   awards: timeLineType[]
   certification: timeLineType[]
   skills: timeLineType[]
+  lecture: timeLineType[]
 }

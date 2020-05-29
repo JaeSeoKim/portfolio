@@ -53,9 +53,15 @@ const TimeLineGradient: React.FunctionComponent<Props> = ({
             }}
             icon={value.icon}
           >
-            <h3 className='text-lg font-semibold'>{value.title}</h3>
-            <h4 className='text-base font-medium'>{value.subTitle}</h4>
-            <div className='text-sm font-normal'>{value.innerText}</div>
+            <h3 className='text-lg overflow-y-auto font-semibold'>
+              {value.title}
+            </h3>
+            <h4 className='text-base overflow-y-auto font-medium'>
+              {value.subTitle}
+            </h4>
+            <div className='text-sm overflow-y-auto font-normal'>
+              {value.innerText}
+            </div>
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>

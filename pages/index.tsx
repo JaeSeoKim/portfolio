@@ -43,6 +43,12 @@ const Page: NextPage<Props> = ({}) => {
       />
       <Divder color id='Projects' />
       <ProjectList data={projectsData} />
+      <Divder color id='Lecture' />
+      <TimeLineGradient
+        title={'Lecture'}
+        className='mx-4'
+        data={profileData.lecture}
+      />
     </div>
   )
 }

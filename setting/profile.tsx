@@ -7,12 +7,16 @@ import {
   MdAttachMoney,
   MdInfo,
   MdComputer,
-  MdDeveloperMode
+  MdDeveloperMode,
+  MdSpeakerNotes
 } from 'react-icons/md'
-import { RiHomeGearLine } from 'react-icons/ri'
+import { RiHomeGearLine, RiLockPasswordLine } from 'react-icons/ri'
 import { FaNetworkWired, FaLinux } from 'react-icons/fa'
 import { TiDocumentText } from 'react-icons/ti'
 import { GrDocker } from 'react-icons/gr'
+import { FiMic } from 'react-icons/fi'
+import { AiOutlineAndroid } from 'react-icons/ai'
+import { IoIosGitNetwork } from 'react-icons/io'
 
 /**
  * 📑 educationData 학력 정보 작성
@@ -213,6 +217,100 @@ const skillsData: timeLineType[] = [
   }
 ]
 
+const lectureData: timeLineType[] = [
+  {
+    title: '모의 쇼핑몰 사이트 해킹하기! (SQL Injection)(2일)',
+    innerText: (
+      <div>
+        <p>- 종로산업정보학교 신입생 진로체험 프로그램</p>
+      </div>
+    ),
+    date: '2019.09.16 ~ 2019.09.23',
+    bgColor1: '#536976',
+    bgColor2: '#292E49',
+    textColor: '#FFF',
+    icon: <FiMic />
+  },
+  {
+    title: 'CTF풀이(HashCat, JWT-Tool, USB PCAP 분석 등)',
+    innerText: (
+      <div>
+        <p>- TeamMODU 오프라인 모임</p>
+      </div>
+    ),
+    date: '2019.11.24',
+    bgColor1: '#acb6e5',
+    bgColor2: '#86fde8',
+    textColor: '#FFF',
+    icon: <MdSpeakerNotes />
+  },
+  {
+    title: '안드로이드 스튜디오를 이용한 TO DO 어플 제작 (SQLite 이용!)',
+    innerText: (
+      <div>
+        <p>- 안드로이드 프로젝트 스터디</p>
+      </div>
+    ),
+    date: '2019.12.06',
+    bgColor1: '#FFE000',
+    bgColor2: '#799F0C',
+    textColor: '#FFF',
+    icon: <AiOutlineAndroid />
+  },
+  {
+    title: '안드로이드 layoutInflater, Activity, intent 에 대한 개념 정리',
+    innerText: (
+      <div>
+        <p>- 안드로이드 프로젝트 스터디</p>
+      </div>
+    ),
+    date: '2019.12.19',
+    bgColor1: '#ffe259',
+    bgColor2: '#ffa751',
+    textColor: '#FFF',
+    icon: <AiOutlineAndroid />
+  },
+  {
+    title: 'DnSpy 사용법',
+    innerText: (
+      <div>
+        <p>- TeamMODU 오프라인 모임</p>
+      </div>
+    ),
+    date: '2019.12.28',
+    bgColor1: '#799F0C',
+    bgColor2: '#ACBB78',
+    textColor: '#FFF',
+    icon: <MdComputer />
+  },
+  {
+    title: 'SCP, Length Extension Attack에 대하여',
+    innerText: (
+      <div>
+        <p>- TeamMODU 오프라인 모임</p>
+      </div>
+    ),
+    date: '2020.02.16',
+    bgColor1: '#5433FF',
+    bgColor2: '#20BDFF',
+    textColor: '#FFF',
+    icon: <RiLockPasswordLine />
+  },
+  {
+    title: 'UTCTF2020문제풀이 (scapy 사용하여 패킷제작)',
+    innerText: (
+      <div>
+        <p>- 2020.03.15</p>
+      </div>
+    ),
+    date: '2020.02.16',
+    bgColor1: '#20BDFF',
+    bgColor2: '#A5FECB',
+    textColor: '#FFF',
+    icon: <IoIosGitNetwork />
+  }
+]
+
 /**
  * 📑 profileData 개인 정보 작성
  * githubId: 'setting/constants.ts' 에서 작성한 내용을 사용하는 것을 추천 드립니다.
@@ -240,5 +338,6 @@ export const profileData: profileType = {
   education: educationData,
   awards: awardsData,
   certification: certificationData,
-  skills: skillsData
+  skills: skillsData,
+  lecture: lectureData
 }
