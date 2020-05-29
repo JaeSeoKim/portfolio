@@ -1,6 +1,6 @@
 import * as CSS from 'csstype'
 
-export type educationType = {
+export type timeLineType = {
   title: string
   subTitle: string
   innerText?: string
@@ -17,5 +17,6 @@ export type profileType = {
   name_ch: string
   img: string
   about: string
-  education: educationType[]
+  education: timeLineType[]
+  awards: timeLineType[]
 }

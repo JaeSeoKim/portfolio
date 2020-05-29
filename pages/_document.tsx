@@ -40,8 +40,6 @@ export default class extends Document {
             content='telephone=no, address=no, email=no'
           />
           <link rel='shortcut icon' href='/static/favicon.ico' />
-
-          <script src='https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.find,Array.prototype.includes,String.prototype.includes,Array.prototype.findIndex,Object.entries'></script>
         </Head>
         <body>
           <Main />

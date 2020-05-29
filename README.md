@@ -8,8 +8,8 @@
 
 - [ ] main Profile page ('/')
   - [x] profile
-  - [ ] Education
-  - [ ] Awards
+  - [x] Education
+  - [x] Awards
   - [ ] Certification
   - [ ] Skills
 - [ ] Projects

@@ -74,18 +74,16 @@ const Nav: React.FunctionComponent<Props> = ({
                 Education
               </a>
             </Link>
-            <a
-              href='#responsive-header'
-              className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4'
-            >
-              Awards
-            </a>
-            <a
-              href='#responsive-header'
-              className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4'
-            >
-              Certification
-            </a>
+            <Link href='/#Awards'>
+              <a className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4'>
+                Awards
+              </a>
+            </Link>
+            <Link href='/#Certification'>
+              <a className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4'>
+                Certification
+              </a>
+            </Link>
 
             <a
               href='#responsive-header'

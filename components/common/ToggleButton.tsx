@@ -1,4 +1,5 @@
 import React, { ChangeEvent } from 'react'
+import { FiMoon, FiSun } from 'react-icons/fi'
 
 type Props = {
   onChange: (e: ChangeEvent<HTMLInputElement>) => void
@@ -24,7 +25,13 @@ const ToggleButton: React.FunctionComponent<Props> = ({
             checked={checked}
           />
           <div className='toggle__line w-10 h-4 bg-gray-600 rounded-full shadow-inner'></div>
-          <div className='toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0'></div>
+          <div className='toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0 flex justify-center'>
+            {checked ? (
+              <FiMoon className='my-auto' color='#fbd38d' />
+            ) : (
+              <FiSun className='my-auto' color='#e53e3e' />
+            )}
+          </div>
         </div>
       </label>
       <style jsx>
