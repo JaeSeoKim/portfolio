@@ -22,7 +22,11 @@ const Profile: React.FunctionComponent<Props> = ({
     <div style={style} className={className}>
       <div id='Profile' className='flex justify-center'>
         <div className='flex flex-col md:flex-row'>
-          <PhotoFrame img={profileData.img} className='my-auto mx-auto' />
+          <PhotoFrame
+            rounding
+            img={profileData.img}
+            className='my-auto mx-auto'
+          />
           <div
             className={
               isDarkMode

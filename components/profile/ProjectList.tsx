@@ -1,28 +1,29 @@
-import React, { useContext } from 'react'
+import ThemeContext from '../../lib/context/ThemContext'
+import { useContext } from 'react'
 import {
   VerticalTimeline,
   VerticalTimelineElement
 } from 'react-vertical-timeline-component'
-import { timeLineType } from '../../interfaces'
-import ThemeContext from '../../lib/context/ThemContext'
+import PhotoFrame from './PhotoFrame'
+import marked from 'marked'
+import Link from 'next/link'
+import { ProjectType } from '../../interfaces'
 
 type Props = {
   style?: React.CSSProperties
   className?: string
-  title: string
-  data: timeLineType[]
+  data?: ProjectType[]
 }
 
-const TimeLine: React.FunctionComponent<Props> = ({
-  data,
+const ProjectList: React.FunctionComponent<Props> = ({
   style,
   className,
-  title
+  data = []
 }) => {
   const { isDarkMode } = useContext(ThemeContext)
   return (
     <div className={className} style={style}>
-      <a href={`#${title}`}>
+      <a href={`# Projects`}>
         <p
           className={
             isDarkMode
@@ -30,7 +31,7 @@ const TimeLine: React.FunctionComponent<Props> = ({
               : 'inline font-bold text-2xl text-gray-700'
           }
         >
-          # {title}
+          # Projects
         </p>
       </a>
       <VerticalTimeline className={'overflow-x-hidden px-1'}>
@@ -53,9 +54,20 @@ const TimeLine: React.FunctionComponent<Props> = ({
             }}
             icon={value.icon}
           >
-            <h3 className='text-lg font-semibold'>{value.title}</h3>
-            <h4 className='text-base font-medium'>{value.subTitle}</h4>
-            <div className='text-sm font-normal'>{value.innerText}</div>
+            <h1 className='text-lg font-semibold'>{value.title}</h1>
+            <div className='flex flex-col justify-center'>
+              <Link href='/[project]' as={`/${value.title}`}>
+                <a className='my-auto mx-auto mt-4'>
+                  <PhotoFrame alt='Project Img' img={value.img} className='' />
+                </a>
+              </Link>
+              <div
+                className='text-sm break-all overflow-y-auto max-w-xs'
+                dangerouslySetInnerHTML={{
+                  __html: marked(value.markdown)
+                }}
+              />
+            </div>
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
@@ -63,4 +75,4 @@ const TimeLine: React.FunctionComponent<Props> = ({
   )
 }
 
-export default TimeLine
+export default ProjectList

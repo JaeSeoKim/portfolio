@@ -6,11 +6,13 @@ import {
   MdLightbulbOutline,
   MdAttachMoney,
   MdInfo,
-  MdComputer
+  MdComputer,
+  MdDeveloperMode
 } from 'react-icons/md'
 import { RiHomeGearLine } from 'react-icons/ri'
 import { FaNetworkWired, FaLinux } from 'react-icons/fa'
 import { TiDocumentText } from 'react-icons/ti'
+import { GrDocker } from 'react-icons/gr'
 
 /**
  * 📑 educationData 학력 정보 작성
@@ -50,8 +52,8 @@ export const educationData: timeLineType[] = [
     subTitle: '- 컴퓨터보안학과(위탁학급)',
     innerText: '수료',
     date: '2019.03. ~ 2020.01',
-    bgColor1: '#ff6e7f',
-    bgColor2: '#bfe9ff',
+    bgColor1: '#BBD2C5',
+    bgColor2: '#536976',
     textColor: '#FFF',
     icon: <MdSchool />
   },
@@ -171,6 +173,46 @@ const certificationData: timeLineType[] = [
   }
 ]
 
+const skillsData: timeLineType[] = [
+  {
+    title: 'Development',
+    innerText: (
+      <div>
+        <p>- Programing: Python, Java, JavaScript, TypeScript</p>
+        <p>- Web: Node.js, React, Mongo, MySQL</p>
+      </div>
+    ),
+    bgColor1: '#00467F',
+    bgColor2: '#A5CC82',
+    textColor: '#FFF',
+    icon: <MdDeveloperMode />
+  },
+  {
+    title: 'Security',
+    innerText: (
+      <div>
+        <p>- Web Hacking, Reversing, Forensic</p>
+      </div>
+    ),
+    bgColor1: '#BBD2C5',
+    bgColor2: '#536976',
+    textColor: '#FFF',
+    icon: <MdSecurity />
+  },
+  {
+    title: 'DevOps',
+    innerText: (
+      <div>
+        <p>- GItHub, Docker, Linux</p>
+      </div>
+    ),
+    bgColor1: '#9796f0',
+    bgColor2: '#fbc7d4',
+    textColor: '#FFF',
+    icon: <GrDocker />
+  }
+]
+
 /**
  * 📑 profileData 개인 정보 작성
  * githubId: 'setting/constants.ts' 에서 작성한 내용을 사용하는 것을 추천 드립니다.
@@ -197,5 +239,6 @@ export const profileData: profileType = {
     `,
   education: educationData,
   awards: awardsData,
-  certification: certificationData
+  certification: certificationData,
+  skills: skillsData
 }

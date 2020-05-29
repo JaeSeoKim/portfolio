@@ -11,8 +11,9 @@
   - [x] Education
   - [x] Awards
   - [x] Certification
-  - [ ] Skills
-- [ ] Projects
+  - [x] Skills
+  - [ ] Projects - progres
+- [ ] \[Project\].js - progres
 - [ ] Lecture
 
 - [x] DarkMode

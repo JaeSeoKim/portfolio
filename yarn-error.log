@@ -1,5 +1,5 @@
 Arguments: 
-  /home/devjs/.nvm/versions/node/v14.3.0/bin/node /mnt/c/Users/DevJS/AppData/Roaming/npm/node_modules/yarn/bin/yarn.js
+  /home/devjs/.nvm/versions/node/v14.3.0/bin/node /mnt/c/Users/DevJS/AppData/Roaming/npm/node_modules/yarn/bin/yarn.js add @types/vertical-timeline-component-for-react
 
 PATH: 
   /home/devjs/.yarn/bin:/home/devjs/.vscode-server/bin/5763d909d5f12fe19f215cbfdd29a91c0fa9208a/bin:/home/devjs/.nvm/versions/node/v14.3.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Python27/:/mnt/c/Python27/Scripts:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Git/mingw64/bin:/mnt/c/Program Files/Git/usr/bin:/mnt/c/Program Files/ojdkbuild/java-1.8.0-openjdk-1.8.0.242-1/bin:/mnt/c/Program Files/ojdkbuild/java-1.8.0-openjdk-1.8.0.242-1/jre/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/ojdkbuild/java-1.8.0-openjdk-1.8.0.242-1/bin:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/DevJS/AppData/Local/Programs/Python/Python36/Scripts/:/mnt/c/Users/DevJS/AppData/Local/Programs/Python/Python36/:/mnt/c/Users/DevJS/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Bandizip/:/mnt/c/Users/DevJS/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/DevJS/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Inno Setup 6:/mnt/c/Program Files (x86)/Windows Kits/10/App Certification Kit:/mnt/c/Users/DevJS/AppData/Roaming/npm:/mnt/c/Users/DevJS/.dotnet/tools:/mnt/c/Users/DevJS/AppData/Local/Android/Sdk/platform-tools:/mnt/c/Users/DevJS/AppData/Local/Pandoc/:/mnt/c/Users/DevJS/AppData/Local/Microsoft/WindowsApps
@@ -14,12 +14,17 @@ Platform:
   linux x64
 
 Trace: 
-  SyntaxError: /home/devjs/git/portfolio/package.json: Unexpected token } in JSON at position 568
-      at JSON.parse (<anonymous>)
-      at /mnt/c/Users/DevJS/AppData/Roaming/npm/node_modules/yarn/lib/cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (/mnt/c/Users/DevJS/AppData/Roaming/npm/node_modules/yarn/lib/cli.js:310:30)
-      at /mnt/c/Users/DevJS/AppData/Roaming/npm/node_modules/yarn/lib/cli.js:321:13
+  Error: https://registry.yarnpkg.com/@types%2fvertical-timeline-component-for-react: Not found
+      at Request.params.callback [as _callback] (/mnt/c/Users/DevJS/AppData/Roaming/npm/node_modules/yarn/lib/cli.js:66987:18)
+      at Request.self.callback (/mnt/c/Users/DevJS/AppData/Roaming/npm/node_modules/yarn/lib/cli.js:140748:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/mnt/c/Users/DevJS/AppData/Roaming/npm/node_modules/yarn/lib/cli.js:141720:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/mnt/c/Users/DevJS/AppData/Roaming/npm/node_modules/yarn/lib/cli.js:141642:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1224:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
 
 npm manifest: 
   {
@@ -34,24 +39,33 @@ npm manifest:
     "dependencies": {
       "@fullhuman/postcss-purgecss": "^2.2.0",
       "@types/marked": "^0.7.4",
+      "@types/react-vertical-timeline-component": "^2.6.0",
       "autoprefixer": "^9.8.0",
       "axios": "^0.19.2",
+      "csstype": "^2.6.10",
       "github-contributions-canvas": "^0.3.0",
+      "global": "^4.4.0",
       "marked": "^1.1.0",
       "next": "latest",
       "postcss-import": "^12.0.1",
       "react": "^16.12.0",
       "react-dom": "^16.12.0",
+      "react-github-heatmap": "^1.0.4",
+      "react-icons": "^3.10.0",
+      "react-tooltip": "^4.2.6",
+      "react-vertical-timeline-component": "^2.6.2",
       "swr": "^0.2.2",
       "tailwindcss": "^1.4.6",
-      "tslint": "^6.1.2",
+      "vertical-timeline-component-for-react": "^1.0.7"
     },
     "devDependencies": {
       "@types/node": "^12.12.21",
       "@types/react": "^16.9.16",
       "@types/react-dom": "^16.9.4",
+      "tslint": "^6.1.2",
       "tslint-config-standard": "^9.0.0",
-      "typescript": "3.7.3"
+      "typescript": "3.7.3",
+      "typescript-tslint-plugin": "^0.5.5"
     },
     "license": "ISC"
   }
@@ -1076,6 +1090,13 @@ Lockfile:
     dependencies:
       "@types/react" "*"
   
+  "@types/react-vertical-timeline-component@^2.6.0":
+    version "2.6.0"
+    resolved "https://registry.yarnpkg.com/@types/react-vertical-timeline-component/-/react-vertical-timeline-component-2.6.0.tgz#0a0b5b95f4e9886d80e1ad9c22db59d42fae5c57"
+    integrity sha512-D6oLK6CQ3KfcF3Q++QR4E/9oN0JOzRXh2GJ+EhVo07YwxJtNH/vDfr1/rnFo7wgngKco9HrJGZ7kT+cBuKLBIg==
+    dependencies:
+      "@types/react" "*"
+  
   "@types/react@*", "@types/react@^16.9.16":
     version "16.9.35"
     resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.35.tgz#a0830d172e8aadd9bd41709ba2281a3124bbd368"
@@ -1791,7 +1812,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.0.0.tgz#03295527d58bd3cd4aa75363f35b2e8d97be2f42"
     integrity sha512-faqwZqnWxbxn+F1d399ygeamQNy3lPp/H9H6rNrqYh4FSVCtcY+3cub1MxA8o9mDd55mM8Aghuu/kuyYA6VTsA==
   
-  camelcase@5.3.1, camelcase@^5.3.1:
+  camelcase@5.3.1, camelcase@^5.0.0, camelcase@^5.3.1:
     version "5.3.1"
     resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
     integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
@@ -1903,7 +1924,7 @@ Lockfile:
       isobject "^3.0.0"
       static-extend "^0.1.1"
   
-  classnames@2.2.6:
+  classnames@2.2.6, classnames@^2.2.5, classnames@^2.2.6:
     version "2.2.6"
     resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
     integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
@@ -2307,7 +2328,7 @@ Lockfile:
     dependencies:
       css-tree "1.0.0-alpha.39"
   
-  csstype@^2.2.0:
+  csstype@^2.2.0, csstype@^2.6.10:
     version "2.6.10"
     resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.10.tgz#e63af50e66d7c266edb6b32909cfd0aabe03928b"
     integrity sha512-D34BqZU4cIlMCY93rZHbrq9pjTAQJ3U8S8rfBqjwHxkGPThWFjzZDQpgMJY0QViLxth6ZKYiwFBo14RdN44U/w==
@@ -2331,6 +2352,11 @@ Lockfile:
     integrity sha512-MJ6mFTZ+nPQO+39ua/ltwNePXrfdF3Ww0wP1Od7EePySXN1cP9XNqRQOG3FxTfipp8jx898LUCgBCEP11Qw/ZQ==
     dependencies:
       buffer-from "^1.1.1"
+  
+  date-fns@^2.9.0:
+    version "2.14.0"
+    resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.14.0.tgz#359a87a265bb34ef2e38f93ecf63ac453f9bc7ba"
+    integrity sha512-1zD+68jhFgDIM0rF05rcwYO8cExdNqxjq4xP1QKM60Q45mnO6zaMWB4tOzrIr4M4GSLntsKeE4c9Bdl2jhL/yw==
   
   debug@=3.1.0:
     version "3.1.0"
@@ -2438,6 +2464,11 @@ Lockfile:
     dependencies:
       domelementtype "^2.0.1"
       entities "^2.0.0"
+  
+  dom-walk@^0.1.0:
+    version "0.1.2"
+    resolved "https://registry.yarnpkg.com/dom-walk/-/dom-walk-0.1.2.tgz#0c548bef048f4d1f2a97249002236060daa3fd84"
+    integrity sha512-6QvTW9mrGeIegrFXdtQi9pk7O/nSK6lSdXW2eqUspN5LWD7UTji2Fqw5V2YLjBpHEoU9Xl/eUWNpDeZvoyOv2w==
   
   domain-browser@^1.1.1:
     version "1.2.0"
@@ -2901,6 +2932,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
     integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
   
+  get-caller-file@^1.0.2:
+    version "1.0.3"
+    resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.3.tgz#f978fa4c90d1dfe7ff2d6beda2a515e713bdcf4a"
+    integrity sha512-3t6rVToeoZfYSGd8YoLFR2DJkiQrIiUrGcjvFX2mDw3bn6k2OtwHN0TNCLbBO+w8qTvimhDkv+LSscbJY1vE6w==
+  
   get-value@^2.0.3, get-value@^2.0.6:
     version "2.0.6"
     resolved "https://registry.yarnpkg.com/get-value/-/get-value-2.0.6.tgz#dc15ca1c672387ca76bd37ac0a395ba2042a2c28"
@@ -2944,6 +2980,14 @@ Lockfile:
       minimatch "^3.0.4"
       once "^1.3.0"
       path-is-absolute "^1.0.0"
+  
+  global@^4.4.0:
+    version "4.4.0"
+    resolved "https://registry.yarnpkg.com/global/-/global-4.4.0.tgz#3e7b105179006a323ed71aafca3e9c57a5cc6406"
+    integrity sha512-wv/LAoHdRE3BeTGz53FAamhGlPLhlssK45usmGFThIi4XqnBmjKQ16u+RNbP7WvigRZDxUsM0J3gcQ5yicaL0w==
+    dependencies:
+      min-document "^2.19.0"
+      process "^0.11.10"
   
   globals@^11.1.0:
     version "11.12.0"
@@ -3677,6 +3721,13 @@ Lockfile:
       bn.js "^4.0.0"
       brorand "^1.0.1"
   
+  min-document@^2.19.0:
+    version "2.19.0"
+    resolved "https://registry.yarnpkg.com/min-document/-/min-document-2.19.0.tgz#7bd282e3f5842ed295bb748cdd9f1ffa2c824685"
+    integrity sha1-e9KC4/WELtKVu3SM3Z8f+iyCRoU=
+    dependencies:
+      dom-walk "^0.1.0"
+  
   mini-css-extract-plugin@0.8.0:
     version "0.8.0"
     resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-0.8.0.tgz#81d41ec4fe58c713a96ad7c723cdb2d0bd4d70e1"
@@ -3774,6 +3825,14 @@ Lockfile:
     integrity sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
     dependencies:
       minimist "^1.2.5"
+  
+  mock-require@^3.0.3:
+    version "3.0.3"
+    resolved "https://registry.yarnpkg.com/mock-require/-/mock-require-3.0.3.tgz#ccd544d9eae81dd576b3f219f69ec867318a1946"
+    integrity sha512-lLzfLHcyc10MKQnNUCv7dMcoY/2Qxd6wJfbqCcVk3LDb8An4hF6ohk5AztrvgKhJCqj36uyzi/p5se+tvyD+Wg==
+    dependencies:
+      get-caller-file "^1.0.2"
+      normalize-path "^2.1.1"
   
   moment@^2.22.1:
     version "2.26.0"
@@ -4701,7 +4760,7 @@ Lockfile:
       object.assign "^4.1.0"
       reflect.ownkeys "^0.2.0"
   
-  prop-types@15.7.2, prop-types@^15.6.2:
+  prop-types@15.7.2, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
     version "15.7.2"
     resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
     integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -4825,6 +4884,21 @@ Lockfile:
       prop-types "^15.6.2"
       scheduler "^0.19.1"
   
+  react-github-heatmap@^1.0.4:
+    version "1.0.4"
+    resolved "https://registry.yarnpkg.com/react-github-heatmap/-/react-github-heatmap-1.0.4.tgz#be7fdf8166cd6748df3690cb46e7be6fe50dc1a7"
+    integrity sha512-h/5uLfAh4xAwRyBxbXNWxo0hUaKOS1Ymu4ThowG1by9M1DF/xXmZ1D2QNKWul6KydFGcrPwuTx+fQYKEeO4Kow==
+    dependencies:
+      date-fns "^2.9.0"
+      tinycolor2 "^1.4.0"
+  
+  react-icons@^3.10.0:
+    version "3.10.0"
+    resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-3.10.0.tgz#6c217a2dde2e8fa8d293210023914b123f317297"
+    integrity sha512-WsQ5n1JToG9VixWilSo1bHv842Cj5aZqTGiS3Ud47myF6aK7S/IUY2+dHcBdmkQcCFRuHsJ9OMUI0kTDfjyZXQ==
+    dependencies:
+      camelcase "^5.0.0"
+  
   react-is@16.13.1, react-is@^16.8.1:
     version "16.13.1"
     resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -4834,6 +4908,30 @@ Lockfile:
     version "0.8.2"
     resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.2.tgz#24bb0858eac92b0d7b0dd561747f0c9fd6c60327"
     integrity sha512-n8GXxo3DwM2KtFEL69DAVhGc4A1THn2qjmfvSo3nze0NLCoPbywazeJPqdp0RdSGLmyhQzeyA+XPXOobbYlkzg==
+  
+  react-tooltip@^4.2.6:
+    version "4.2.6"
+    resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-4.2.6.tgz#a3d5f0d1b0c597c0852ba09c5e2af0019b7cfc70"
+    integrity sha512-KX/zCsPFCI8RuulzBX86U+Ur7FvgGNRBdb7dUu0ndo8Urinn48nANq9wfq4ABlehweQjPzLl7XdNAtLKza+I3w==
+    dependencies:
+      prop-types "^15.7.2"
+      uuid "^7.0.3"
+  
+  react-vertical-timeline-component@^2.6.2:
+    version "2.6.2"
+    resolved "https://registry.yarnpkg.com/react-vertical-timeline-component/-/react-vertical-timeline-component-2.6.2.tgz#320bcea8f5913bbf279449902e9a0d428197963f"
+    integrity sha512-4RX2BOYyxvFb4cXVUxNcMrLnktthRpz3kFvpwgtlPTBZYYLasj+qAxB9Y2x6No8fBqiactr1xU9BSuC2q6YNjg==
+    dependencies:
+      classnames "^2.2.6"
+      prop-types "^15.7.2"
+      react-visibility-sensor "^5.1.1"
+  
+  react-visibility-sensor@^5.0.2, react-visibility-sensor@^5.1.1:
+    version "5.1.1"
+    resolved "https://registry.yarnpkg.com/react-visibility-sensor/-/react-visibility-sensor-5.1.1.tgz#5238380960d3a0b2be0b7faddff38541e337f5a9"
+    integrity sha512-cTUHqIK+zDYpeK19rzW6zF9YfT4486TIgizZW53wEZ+/GPBbK7cNS0EHyJVyHYacwFEvvHLEKfgJndbemWhB/w==
+    dependencies:
+      prop-types "^15.7.2"
   
   react@^16.12.0:
     version "16.13.1"
@@ -5597,6 +5695,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
     integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
   
+  tinycolor2@^1.4.0:
+    version "1.4.1"
+    resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.4.1.tgz#f4fad333447bc0b07d4dc8e9209d8f39a8ac77e8"
+    integrity sha1-9PrTM0R7wLB9TcjpIJ2POaisd+g=
+  
   to-arraybuffer@^1.0.0:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/to-arraybuffer/-/to-arraybuffer-1.0.1.tgz#7d229b1fcc637e466ca081180836a7aabff83f43"
@@ -5739,6 +5842,15 @@ Lockfile:
     version "0.0.6"
     resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
     integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+  
+  typescript-tslint-plugin@^0.5.5:
+    version "0.5.5"
+    resolved "https://registry.yarnpkg.com/typescript-tslint-plugin/-/typescript-tslint-plugin-0.5.5.tgz#673875c43640251f1ab3d63745d7d49726ff961c"
+    integrity sha512-tR5igNQP+6FhxaPJYRlUBVsEl0n5cSuXRbg7L1y80mL4B1jUHb8uiIcbQBJ9zWyypJEdFYFUccpXxvMwZR8+AA==
+    dependencies:
+      minimatch "^3.0.4"
+      mock-require "^3.0.3"
+      vscode-languageserver "^5.2.1"
   
   typescript@3.7.3:
     version "3.7.3"
@@ -5886,15 +5998,60 @@ Lockfile:
     dependencies:
       inherits "2.0.3"
   
+  uuid@^7.0.3:
+    version "7.0.3"
+    resolved "https://registry.yarnpkg.com/uuid/-/uuid-7.0.3.tgz#c5c9f2c8cf25dc0a372c4df1441c41f5bd0c680b"
+    integrity sha512-DPSke0pXhTZgoF/d+WSt2QaKMCFSfx7QegxEWT+JOuHF5aWrKEn0G+ztjuJg/gG8/ItK+rbPCD/yNv8yyih6Cg==
+  
   vendors@^1.0.0:
     version "1.0.4"
     resolved "https://registry.yarnpkg.com/vendors/-/vendors-1.0.4.tgz#e2b800a53e7a29b93506c3cf41100d16c4c4ad8e"
     integrity sha512-/juG65kTL4Cy2su4P8HjtkTxk6VmJDiOPBufWniqQ6wknac6jNiXS9vU+hO3wgusiyqWlzTbVHi0dyJqRONg3w==
   
+  vertical-timeline-component-for-react@^1.0.7:
+    version "1.0.7"
+    resolved "https://registry.yarnpkg.com/vertical-timeline-component-for-react/-/vertical-timeline-component-for-react-1.0.7.tgz#3ea09bd7745ebb73e59ec40fcbf51bf3fb4accf4"
+    integrity sha512-KYQYgbfX6mRLxcQI/Q8YnDvch0jmSJhVaVygZRgAj750vBpdoEcTsKXGm17B8vA4TDF+K4VezSM/z/yv/bZstg==
+    dependencies:
+      classnames "^2.2.5"
+      prop-types "^15.6.1"
+      react-visibility-sensor "^5.0.2"
+  
   vm-browserify@^1.0.1:
     version "1.1.2"
     resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
     integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
+  
+  vscode-jsonrpc@^4.0.0:
+    version "4.0.0"
+    resolved "https://registry.yarnpkg.com/vscode-jsonrpc/-/vscode-jsonrpc-4.0.0.tgz#a7bf74ef3254d0a0c272fab15c82128e378b3be9"
+    integrity sha512-perEnXQdQOJMTDFNv+UF3h1Y0z4iSiaN9jIlb0OqIYgosPCZGYh/MCUlkFtV2668PL69lRDO32hmvL2yiidUYg==
+  
+  vscode-languageserver-protocol@3.14.1:
+    version "3.14.1"
+    resolved "https://registry.yarnpkg.com/vscode-languageserver-protocol/-/vscode-languageserver-protocol-3.14.1.tgz#b8aab6afae2849c84a8983d39a1cf742417afe2f"
+    integrity sha512-IL66BLb2g20uIKog5Y2dQ0IiigW0XKrvmWiOvc0yXw80z3tMEzEnHjaGAb3ENuU7MnQqgnYJ1Cl2l9RvNgDi4g==
+    dependencies:
+      vscode-jsonrpc "^4.0.0"
+      vscode-languageserver-types "3.14.0"
+  
+  vscode-languageserver-types@3.14.0:
+    version "3.14.0"
+    resolved "https://registry.yarnpkg.com/vscode-languageserver-types/-/vscode-languageserver-types-3.14.0.tgz#d3b5952246d30e5241592b6dde8280e03942e743"
+    integrity sha512-lTmS6AlAlMHOvPQemVwo3CezxBp0sNB95KNPkqp3Nxd5VFEnuG1ByM0zlRWos0zjO3ZWtkvhal0COgiV1xIA4A==
+  
+  vscode-languageserver@^5.2.1:
+    version "5.2.1"
+    resolved "https://registry.yarnpkg.com/vscode-languageserver/-/vscode-languageserver-5.2.1.tgz#0d2feddd33f92aadf5da32450df498d52f6f14eb"
+    integrity sha512-GuayqdKZqAwwaCUjDvMTAVRPJOp/SLON3mJ07eGsx/Iq9HjRymhKWztX41rISqDKhHVVyFM+IywICyZDla6U3A==
+    dependencies:
+      vscode-languageserver-protocol "3.14.1"
+      vscode-uri "^1.0.6"
+  
+  vscode-uri@^1.0.6:
+    version "1.0.8"
+    resolved "https://registry.yarnpkg.com/vscode-uri/-/vscode-uri-1.0.8.tgz#9769aaececae4026fb6e22359cb38946580ded59"
+    integrity sha512-obtSWTlbJ+a+TFRYGaUumtVwb+InIUVI0Lu0VBUAPmj2cU5JutEXg3xUE0c2J5Tcy7h2DEKVJBFi+Y9ZSFzzPQ==
   
   watchpack-chokidar2@^2.0.0:
     version "2.0.0"

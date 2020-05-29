@@ -1,10 +1,21 @@
 import * as CSS from 'csstype'
 
+export type ProjectType = {
+  title: string
+  markdown: string
+  img: string
+  date: string
+  bgColor1: CSS.Color
+  bgColor2: CSS.Color
+  textColor: CSS.Color
+  icon: JSX.Element
+}
+
 export type timeLineType = {
   title: string
-  subTitle: string
+  subTitle?: string
   innerText?: string | JSX.Element
-  date: string
+  date?: string
   bgColor1: CSS.Color
   bgColor2: CSS.Color
   textColor: CSS.Color
@@ -20,4 +31,5 @@ export type profileType = {
   education: timeLineType[]
   awards: timeLineType[]
   certification: timeLineType[]
+  skills: timeLineType[]
 }

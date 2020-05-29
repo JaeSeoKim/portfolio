@@ -1,10 +1,15 @@
 import Divder from '../components/common/Divder'
 import GitContributions from '../components/profile/GitContributions'
 import { profileData } from '../setting/profile'
-import TimeLine from '../components/profile/TimeLine'
+import TimeLineGradient from '../components/profile/TimeLineGradient'
 import Profile from '../components/profile/Profile'
+import ProjectList from '../components/profile/ProjectList'
+import { projectsData } from '../setting/project'
+import { NextPage } from 'next'
 
-const IndexPage = () => {
+type Props = {}
+
+const Page: NextPage<Props> = ({}) => {
   return (
     <div className='flex justify-center flex-col'>
       <Profile profileData={profileData} />
@@ -13,21 +18,33 @@ const IndexPage = () => {
         githubId={profileData.githubId}
       />
       <Divder color id='Education' />
-      <TimeLine
+      <TimeLineGradient
         title={'Education'}
         className='mx-4'
         data={profileData.education}
       />
       <Divder color id='Awards' />
-      <TimeLine title={'Awards'} className='mx-4' data={profileData.awards} />
+      <TimeLineGradient
+        title={'Awards'}
+        className='mx-4'
+        data={profileData.awards}
+      />
       <Divder color id='Certification' />
-      <TimeLine
+      <TimeLineGradient
         title={'Certification'}
         className='mx-4'
         data={profileData.certification}
       />
+      <Divder color id='Skills' />
+      <TimeLineGradient
+        title={'Skills'}
+        className='mx-4'
+        data={profileData.skills}
+      />
+      <Divder color id='Projects' />
+      <ProjectList data={projectsData} />
     </div>
   )
 }
 
-export default IndexPage
+export default Page

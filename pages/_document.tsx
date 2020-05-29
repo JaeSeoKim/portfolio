@@ -23,7 +23,7 @@ export default class extends Document {
           <title>{site.SITE_TITLE}</title>
           <meta
             name='viewport'
-            content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes'
+            content='width=device-width,initial-scale=1.0,minimum-scale=1.0'
           />
           <meta property='og:type' content='website' />
           <meta property='og:site_name' content={site.SITE_NAME} />
