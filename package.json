@@ -16,7 +16,7 @@
     "csstype": "^2.6.10",
     "github-contributions-canvas": "^0.3.0",
     "global": "^4.4.0",
-    "marked": "^1.1.0",
+    "marked": "^4.0.10",
     "next": "latest",
     "postcss-import": "^12.0.1",
     "react": "^16.12.0",
